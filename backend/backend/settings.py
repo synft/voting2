@@ -25,7 +25,7 @@ INSTALLED_APPS = [
     'corsheaders',
     'backend.voting',
 ]
-
+print("INSTALLED_APPS:", settings.INSTALLED_APPS)
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
