@@ -1,4 +1,5 @@
 import os
+import django_heroku
 from pathlib import Path
 from dotenv import load_dotenv
 
@@ -62,12 +63,7 @@ CHANNEL_LAYERS = {
     },
 }
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
+django_heroku.settings(locals(), logging=False)  # will read DATABASE_URL
 
 AUTH_PASSWORD_VALIDATORS = [
     {
