@@ -23,7 +23,7 @@ INSTALLED_APPS = [
     'channels',
     'rest_framework',
     'corsheaders',
-    'voting',
+    'backend.voting',
 ]
 
 MIDDLEWARE = [
